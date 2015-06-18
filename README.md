@@ -13,16 +13,17 @@ Examples of a variety of architectures that can be spun up with Terraform can be
 <https://github.com/hashicorp/terraform/tree/master/examples>
 
 ###TECHNOLOGY STACK
-This example, here, specifies AWS as the provider, and instantiates a given number (default = 1) of EC2 instance(s) (Ubuntu Precise 12.04-i386), a single SQL database, and an Elastic Load Balancer (ELB). The goal: rapid spin-up of brand-spankin' new, fully-featured, skinnable, and potentially scalable websites in the cloud suitable for the average small business client.
+This example, here, specifies AWS as the provider, and instantiates a given number (default = 1) of EC2 instance(s) (Ubuntu Precise 12.04-i386), and an Elastic Load Balancer (ELB). The script still needs to set up an RDS instance, and install WordPress. The goal: rapid spin-up of brand-spankin' new, fully-featured, skinnable, and potentially scalable websites in the cloud suitable for the average small business client.
 
 ###INSTALLATION
 1) Download and unzip Terraform's zipped installation files from the Hashicorp site into your chosen directory
 
-2) Assuming you're working on Linux, add Terraform's binaries to your path, like so...
+2) Assuming you're working on Linux, verify where you installed Terraform and then add its binaries to your path, like so...
 
     $pwd
-    /home/seanbradley/Projects/tf
-    $export PATH=/home/seanbradley/Projects/tf:$PATH
+    /home/<you>/<your_project_directory>/tf
+    
+    $export PATH=/home/<you>/<your_project_directory>/tf:$PATH
 
 3) Check to see if it's installed correctly by entering the following in the CLI...
 
